@@ -1,0 +1,6 @@
+{
+    "parent": "item/ring",
+    "textures": {
+        "layer0": "items/aventurine_stoneplate_ring"
+    }
+}

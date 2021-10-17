@@ -1,0 +1,40 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"bonus_rolls": 2,
+			"entries": [
+				{
+					"type": "empty",
+					"weight": 40
+				},{
+					"type": "item",
+					"name": "minecraft:diamond_boots",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{Unbreakable:1,HideFlags:63,display:{Lore:[\"Slightly increases movement speed\",\"Echoes of the spectre it came from remain\"],Name:\"Infused Rags\"},AttributeModifiers:[{UUIDLeast:1854435,UUIDMost:1,Name:\"a\",Slot:boots,Operation:1,AttributeName:\"generic.movementSpeed\",Amount:0.13}]}"
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:diamond_chestplate",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{Unbreakable:1,HideFlags:63,display:{Lore:[\"Slightly increases movement speed\",\"Echoes of the spectre it came from remain\"],Name:\"Infused Rags\"},AttributeModifiers:[{UUIDLeast:18545,UUIDMost:1,Name:\"a\",Slot:chest,Operation:1,AttributeName:\"generic.movementSpeed\",Amount:0.13}]}"
+						}
+					]
+				}
+			],
+			"conditions": [
+				{
+					"condition": "killed_by_player"
+				}
+			]
+		}
+	]
+}

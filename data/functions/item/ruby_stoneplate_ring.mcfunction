@@ -1,0 +1,1 @@
+give @p dye 1 1 {display:{Name:"§rRuby Stoneplate Ring"},AttributeModifiers:[{UUIDMost:5L,UUIDLeast:1L,AttributeName:"generic.attackDamage",Name:"a",Slot:"offhand",Operation:2,Amount:.25}]}

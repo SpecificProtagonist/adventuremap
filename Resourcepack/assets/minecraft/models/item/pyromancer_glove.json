@@ -1,0 +1,6 @@
+{
+    "parent": "item/talisman",
+    "textures": {
+        "layer0": "items/pyromancer_glove"
+    }
+}

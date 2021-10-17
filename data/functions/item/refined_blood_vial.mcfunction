@@ -1,0 +1,1 @@
+give @p potion 1 0 {CustomPotionColor:16507680,CustomPotionEffects:[{Id:22,Amplifier:2,Duration:2000,ShowParticles:false}],display:{Name:"§rRefined Blood Vial",Lore:["Provides protective healthpoints for a short while.","The refinement process has given this a","golden colour, but the taste is still the same."]},HideFlags:32}

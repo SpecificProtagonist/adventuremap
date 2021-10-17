@@ -1,0 +1,1 @@
+give @p dye 1 3 {display:{Name:"§rAventurine Stoneplate Ring"},AttributeModifiers:[{UUIDMost:5L,UUIDLeast:1L,AttributeName:"generic.knockbackResistance",Name:"a",Slot:"offhand",Operation:0,Amount:.5},{UUIDMost:5L,UUIDLeast:2L,AttributeName:"generic.armorToughness",Name:"a",Slot:"offhand",Operation:0,Amount:1}]}

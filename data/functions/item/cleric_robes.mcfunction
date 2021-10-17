@@ -1,0 +1,1 @@
+give @p leather_chestplate 1 0 {Unbreakable:1,HideFlags:63,display:{Lore:["2 Armor","Worn by members of","the Good Church"],color:16777215,Name:"§rCleric Robes"},AttributeModifiers:[{UUIDLeast:1,UUIDMost:2,Name:"§rchest",Slot:chest,Operation:0,AttributeName:"generic.armor",Amount:2}]}

@@ -1,0 +1,1 @@
+give @p potion 1 0 {loseOnDeath:true,display:{Name:"§rPainful Cure",Lore:["As unpleasant as it is,","it still helps."]},HideFlags:32,CustomPotionColor:6545960,CustomPotionEffects:[{Id:10,Amplifier:2,Duration:270},{Id:19,Amplifier:0,Duration:300},{Id:20,Amplifier:1,Duration:260}]}

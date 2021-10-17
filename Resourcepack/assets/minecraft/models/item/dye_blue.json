@@ -1,0 +1,6 @@
+{
+	"parent": "item/ring",
+	"textures": {
+		"layer0": "items/bloodbite_ring"
+	}
+}
