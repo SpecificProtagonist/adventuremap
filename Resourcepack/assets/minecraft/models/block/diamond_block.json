@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_top",
+    "textures": {
+        "top": "blocks/barrel_top",
+        "side": "blocks/barrel_side"
+    }
+}

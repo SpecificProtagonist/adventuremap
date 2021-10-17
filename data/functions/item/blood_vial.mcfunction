@@ -1,0 +1,1 @@
+give @p potion 1 0 {Potion:"strong_healing",display:{Name:"§rBlood Vial",Lore:["Restores Health","Sometimes, survival takes","precedence over morality"]},HideFlags:32}

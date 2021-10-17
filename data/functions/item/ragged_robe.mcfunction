@@ -1,0 +1,1 @@
+give @p diamond_chestplate 1 0 {Unbreakable:1,HideFlags:63,display:{Lore:["Has some suspicious red-brown stains"],Name:"§rDirty Rags"},AttributeModifiers:[{UUIDLeast:1,UUIDMost:2,Name:"a",Slot:chest,Operation:0,AttributeName:"generic.armor",Amount:0}]}

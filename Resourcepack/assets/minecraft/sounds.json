@@ -1,0 +1,150 @@
+{
+  "custom.boom": {
+    "category": "master",
+    "sounds": [
+      "custom/boom"
+    ]
+},
+  "custom.statue_demon_1": {
+    "category": "master",
+    "sounds": [
+      "custom/statue_demon_1"
+    ]
+},
+
+  "entity.stray.ambient": {
+    "category": "hostile",
+    "replace": true,
+    "sounds": [
+      {
+        "name": "entity.squid.ambient",
+        "type": "event"
+      }
+    ]
+  },
+  "entity.stray.step": {
+    "category": "hostile",
+    "replace": true,
+    "sounds": [
+      {
+        "name": "entity.squid.ambient",
+        "type": "event"
+      }
+    ]
+  },
+  "entity.stray.hurt": {
+    "category": "hostile",
+    "replace": true,
+    "sounds": [
+      {
+        "name": "random.burp",
+        "type": "event",
+        "weight": 2
+      },
+      "mob/stray/hurt1",
+      "mob/stray/hurt2",
+      "mob/stray/hurt3"
+    ]
+  },
+  "entity.stray.death": {
+    "category": "hostile",
+    "replace": true,
+    "sounds": [
+      {
+        "name": "random.burp2",
+        "type": "event",
+        "weight": 1
+      },
+      "mob/stray/death"
+    ]
+  },
+  "entity.zombie_villager.step": {
+    "category": "hostile",
+    "replace": true,
+    "sounds": [
+      {
+        "name": "entity.squid.ambient",
+        "type": "event",
+		"pitch": 2
+      }
+    ]
+  },
+  "entity.zombie_villager.ambient": {
+    "category": "hostile",
+    "replace": true,
+    "sounds": [
+      {
+        "name": "entity.squid.ambient",
+        "type": "event",
+		"pitch": 2
+      }
+    ]
+  },
+  "entity.zombie_villager.hurt": {
+    "category": "hostile",
+    "replace": true,
+    "sounds": [
+      {
+        "name": "entity.squid.ambient",
+        "type": "event",
+		"pitch": 2
+      }
+    ]
+  },
+  "entity.zombie_villager.death": {
+    "category": "hostile",
+    "replace": true,
+    "sounds": [
+      {
+        "name": "entity.squid.ambient",
+        "type": "event",
+		"pitch": 2
+      }
+    ]
+  },
+  "entity.zombie.step": {
+    "category": "hostile",
+    "replace": true,
+    "sounds": [
+      {
+        "name": "entity.squid.ambient",
+        "type": "event",
+		"pitch": 2
+      }
+    ]
+  },
+  "entity.zombie.ambient": {
+    "category": "hostile",
+    "replace": true,
+    "sounds": [
+      {
+        "name": "entity.squid.ambient",
+        "type": "event",
+		"pitch": 2
+      }
+    ]
+  },
+  "entity.zombie.hurt": {
+    "category": "hostile",
+    "replace": true,
+    "sounds": [
+      {
+        "name": "entity.squid.ambient",
+        "type": "event",
+		"pitch": 2
+      }
+    ]
+  },
+  "entity.zombie.death": {
+    "category": "hostile",
+    "replace": true,
+    "sounds": [
+      {
+        "name": "entity.squid.ambient",
+        "type": "event",
+		"pitch": 2
+      }
+    ]
+  }
+
+}

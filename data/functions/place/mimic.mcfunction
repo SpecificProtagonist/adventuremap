@@ -1,0 +1,1 @@
+give @p armor_stand 1 0 {EntityTag:{Tags:[newMimicPos]},display:{Name:newMimic}}

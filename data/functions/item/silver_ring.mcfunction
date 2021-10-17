@@ -1,0 +1,1 @@
+give @p dye 1 5 {HideFlags:63,display:{Name:"§rSilver Ring",Lore:["Boost item drop rate.","Simple, unadorned but not useless."]},AttributeModifiers:[{UUIDMost:5L,UUIDLeast:1L,AttributeName:"generic.luck",Name:"a",Slot:"offhand",Operation:0,Amount:1}]}

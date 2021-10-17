@@ -1,0 +1,1 @@
+give @p diamond_chestplate 1 0 {Unbreakable:1,HideFlags:63,display:{Lore:["Slightly increases movement speed","Echoes of the spectre it came from remain"],Name:"§rInfused Trousers"},AttributeModifiers:[{UUIDLeast:1,UUIDMost:2,Name:"a",Slot:chest,Operation:1,AttributeName:"generic.movementSpeed",Amount:0.13}]}

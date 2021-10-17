@@ -1,0 +1,1 @@
+give @p dye 1 2 {display:{Name:"§rSaphire Stoneplate Ring"},AttributeModifiers:[{UUIDMost:5L,UUIDLeast:1L,AttributeName:"generic.movementSpeed",Name:"a",Slot:"offhand",Operation:1,Amount:.20}]}

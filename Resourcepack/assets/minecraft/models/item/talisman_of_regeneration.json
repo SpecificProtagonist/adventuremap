@@ -1,0 +1,6 @@
+{
+    "parent": "item/talisman",
+    "textures": {
+        "layer0": "items/talisman_of_regeneration"
+    }
+}

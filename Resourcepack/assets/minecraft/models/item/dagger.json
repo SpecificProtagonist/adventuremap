@@ -1,0 +1,28 @@
+{
+    "parent": "item/handheld_medium",
+    "textures": {
+        "layer0": "items/dagger"
+    },
+    "display": {
+        "thirdperson_righthand": {
+            "rotation": [ 0, -90, 55 ],
+            "translation": [ 0, 9.0, 0.5 ],
+            "scale": [ 1.7, 1.7, 1 ]
+        },
+        "thirdperson_lefthand": {
+            "rotation": [ 0, -90, 55 ],
+            "translation": [ 0, 9.0, 0.5 ],
+            "scale": [ 1.7, 1.7, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ -60, -90, 25 ],
+            "translation": [ 3, 5.2, -6.7 ],
+            "scale": [ 1.34, 1.34, 0.8 ]
+        },
+        "firstperson_lefthand": {
+            "rotation": [ -60, 90, -25 ],
+            "translation": [ 3, 3.2, -6.7 ],
+            "scale": [ 1.34, 1.34, 0.8 ]
+        }
+	}
+}

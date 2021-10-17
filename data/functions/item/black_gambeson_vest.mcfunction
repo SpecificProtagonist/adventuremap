@@ -1,0 +1,1 @@
+give @p leather_chestplate 1 0 {Unbreakable:1,HideFlags:63,display:{Lore:["5 Armor","These thick layers of linen","prove remarkable at protecting","their wearer from harm"],color:9779350,Name:"§rPurple Vest"},AttributeModifiers:[{UUIDLeast:1,UUIDMost:2,Name:"§rchest",Slot:chest,Operation:0,AttributeName:"generic.armor",Amount:5}]}
