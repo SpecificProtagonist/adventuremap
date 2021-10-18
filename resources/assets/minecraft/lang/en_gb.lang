@@ -1,0 +1,18 @@
+language.name=English
+language.region=United Kingdom
+language.code=en_gb
+
+entity.Skeleton.name=a spindly body
+entity.WitherSkeleton.name=a walking skeleton
+entity.Stray.name=a blood-drained husk
+entity.Spider.name=a spider
+entity.Zombie.name=a drained man
+entity.Husk.name=a spectre
+entity.Slime.name=a slime
+entity.Silverfish.name=a rat
+entity.CaveSpider.name=a giant spider
+entity.ZombieVillager.name=a drained man
+entity.Guardian.name=a corrupted brain
+entity.EvocationIllager.name=a cultist leader
+entity.Vex.name=a pseudodemon
+entity.VindicationIllager.name=a zealous cultist

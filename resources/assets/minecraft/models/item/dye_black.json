@@ -1,0 +1,6 @@
+{
+    "parent": "item/ring",
+    "textures": {
+        "layer0": "item/quarz_stoneplate_ring"
+    }
+}

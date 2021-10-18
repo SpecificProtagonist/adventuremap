@@ -1,0 +1,6 @@
+{
+    "parent": "item/handheld_medium",
+    "textures": {
+        "layer0": "item/cleaver"
+    }
+}

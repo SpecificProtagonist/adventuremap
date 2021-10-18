@@ -1,0 +1,6 @@
+{
+    "parent": "item/spear",
+    "textures": {
+        "layer0": "item/greater_fireball_staff"
+    }
+}

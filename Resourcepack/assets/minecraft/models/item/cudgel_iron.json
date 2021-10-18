@@ -1,6 +1,0 @@
-{
-    "parent": "item/handheld_medium",
-    "textures": {
-        "layer0": "items/cudgel_iron"
-    }
-}
