@@ -1,28 +1,28 @@
-execute @e[tag=spawnpoint_inactive,r=4] ~ ~ ~ title @p actionbar {"text":"Spawnpoint set"}
-execute @e[tag=spawnpoint_active,r=4] ~ ~ ~ title @p actionbar {"text":"Rested"}
-execute @e[tag=spawnpoint_inactive,r=4] ~ ~ ~ particle dragonbreath ~ ~1 ~ .7 1 .7 0 50
-execute @e[tag=spawnpoint_active,r=4] ~ ~ ~ particle dragonbreath ~ ~1 ~ .5 1 .5 0 15
-scoreboard players tag @e[tag=spawnpoint_active] add spawnpoint_inactive
-scoreboard players tag @e remove spawnpoint_active
-execute @p ~ ~ ~ scoreboard players tag @e[tag=spawnpoint,r=3] add spawnpoint_active
-scoreboard players tag @e[tag=spawnpoint_active] remove spawnpoint_inactive
-execute @e[tag=spawnpoint_active] ~ ~ ~ spawnpoint @p ~ ~-4 ~
-scoreboard players tag @p add rested
+execute if entity @e[tag=spawnpoint_inactive,distance=..4] run title @p actionbar {"text":"Spawnpoint set"}
+execute if entity @e[tag=spawnpoint_active,distance=..4] run title @p actionbar {"text":"Rested"}
+execute at @e[tag=spawnpoint_inactive,distance=..4] run particle dragon_breath ~ ~1 ~ .7 1 .7 0 50
+execute at @e[tag=spawnpoint_active,distance=..4] run particle dragon_breath ~ ~1 ~ .5 1 .5 0 15
+tag @e[tag=spawnpoint_active] add spawnpoint_inactive
+tag @e remove spawnpoint_active
+execute at @p run tag @e[tag=spawnpoint,distance=..4] add spawnpoint_active
+tag @e[tag=spawnpoint_active] remove spawnpoint_inactive
+execute at @e[tag=spawnpoint_active] run spawnpoint @p ~ ~-4 ~
+tag @p add rested
 
-clear @p potion 0 99 {display:{Name:"§rBlood Vial"}}
+clear @p potion{display:{Name:"§rBlood Vial"}}
 advancement grant @p only map:bottles
-give @p potion 1 0 {loseOnDeath:true,Potion:"strong_healing",display:{Name:"§rBlood Vial",Lore:["Restores Health","Sometimes, survival takes","precedence over morality"]},HideFlags:32}
-give @p potion 1 0 {loseOnDeath:true,Potion:"strong_healing",display:{Name:"§rBlood Vial",Lore:["Restores Health","Sometimes, survival takes","precedence over morality"]},HideFlags:32}
-give @p potion 1 0 {loseOnDeath:true,Potion:"strong_healing",display:{Name:"§rBlood Vial",Lore:["Restores Health","Sometimes, survival takes","precedence over morality"]},HideFlags:32}
+give @p potion{loseOnDeath:true,Potion:"strong_healing",display:{Name:"§rBlood Vial",Lore:["Restores Health","Sometimes, survival takes","precedence over morality"]},HideFlags:32}
+give @p potion{loseOnDeath:true,Potion:"strong_healing",display:{Name:"§rBlood Vial",Lore:["Restores Health","Sometimes, survival takes","precedence over morality"]},HideFlags:32}
+give @p potion{loseOnDeath:true,Potion:"strong_healing",display:{Name:"§rBlood Vial",Lore:["Restores Health","Sometimes, survival takes","precedence over morality"]},HideFlags:32}
 advancement revoke @p only map:bottles
 
-xp -48L @p[score_athame_used_min=8]
-scoreboard players remove @e[score_athame_used_min=8] athame_used 8
-xp -24L @p[score_athame_used_min=4]
-scoreboard players remove @e[score_athame_used_min=4] athame_used 4
-xp -12L @p[score_athame_used_min=2]
-scoreboard players remove @e[score_athame_used_min=2] athame_used 2
-xp -6L @p[score_athame_used_min=1]
+xp add @p[scores={athame_used=8..}] -48 levels
+scoreboard players remove @e[scores={athame_used=8..}] athame_used 8
+xp add @p[scores={athame_used=4..}] -24 levels
+scoreboard players remove @e[scores={athame_used=4..}] athame_used 4
+xp add @p[scores={athame_used=2..}] -12 levels
+scoreboard players remove @e[scores={athame_used=2..}] athame_used 2
+xp add @p[scores={athame_used=1..}] -6 levels
 scoreboard players set @p athame_used 0
-effect @p instant_health 10 0 true
+effect give @p instant_health 10 0 true
 function map:spawn_mobs

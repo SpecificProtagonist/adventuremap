@@ -1,5 +1,5 @@
-setblock -463 97 456 lever facing=up_z,powered=false
-setblock 1004 97 1000 lever facing=up_z,powered=true
+setblock -463 97 456 lever[face=floor,facing=north,powered=false]
+setblock 1004 97 1000 lever[face=floor,facing=north,powered=true]
 setblock -463 95 457 glass
 setblock -463 95 457 stone
 
@@ -10,9 +10,9 @@ playsound minecraft:block.piston.extend master @p 1004 98 1004 2 .6
 title @p subtitle {"text":"Cathedral of Fire"}
 title @p title {"text":""}
 playsound custom.boom master @p ~ ~ ~ 2 0 1
-effect @p blindness 2 0 true
+effect give @p blindness 2 0 true
 
-execute @p[tag=!boss2_minion] ~ ~ ~ kill @e[tag=mob]
+execute if entity @p[tag=!boss2_minion] run kill @e[tag=mob]
 scoreboard players set @p eventTimer 1
 scoreboard players set @p boss2_minion 4
-scoreboard players tag @p[tag=!boss2_minion] add boss2_started
+tag @p[tag=!boss2_minion] add boss2_started

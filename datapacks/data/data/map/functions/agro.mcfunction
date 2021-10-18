@@ -1,11 +1,11 @@
-scoreboard players tag @s add agroActive
-execute @s[tag=agro2] ~ ~ ~ execute @e[tag=agro,r=2,rm=1] ~ ~ ~ function map:agro if @s[tag=!agroActive]
-execute @s[tag=agro5] ~ ~ ~ execute @e[tag=agro,r=5,rm=1] ~ ~ ~ function map:agro if @s[tag=!agroActive]
-execute @s[tag=agro9] ~ ~ ~ execute @e[tag=agro,r=9,rm=1] ~ ~ ~ function map:agro if @s[tag=!agroActive]
-execute @s[tag=agro2] ~ ~ ~ entitydata @e[tag=mob,r=2] {NoAI:false}
-execute @s[tag=agro5] ~ ~ ~ entitydata @e[tag=mob,r=5] {NoAI:false}
-execute @s[tag=agro9] ~ ~ ~ entitydata @e[tag=mob,r=9] {NoAI:false}
-execute @s[tag=agro2] ~ ~ ~ scoreboard players tag @e[tag=caster,r=2] add casteractive
-execute @s[tag=agro5] ~ ~ ~ scoreboard players tag @e[tag=caster,r=5] add casteractive
-execute @s[tag=agro9] ~ ~ ~ scoreboard players tag @e[tag=caster,r=9] add casteractive
+tag @s add agroActive
+execute if entity @s[tag=agro2] as @e[tag=agro,distance=1..2.5] if entity @s[tag=!agroActive] run function map:agro
+execute if entity @s[tag=agro5] as @e[tag=agro,distance=1..5.5] if entity @s[tag=!agroActive] run function map:agro
+execute if entity @s[tag=agro9] as @e[tag=agro,distance=1..9.5] if entity @s[tag=!agroActive] run function map:agro
+execute if entity @s[tag=agro2] as @e[tag=mob,distance=..2.5] run data merge entity @s {NoAI:false}
+execute if entity @s[tag=agro5] as @e[tag=mob,distance=..5.5] run data merge entity @s {NoAI:false}
+execute if entity @s[tag=agro9] as @e[tag=mob,distance=..9.5] run data merge entity @s {NoAI:false}
+execute if entity @s[tag=agro2] run tag @e[tag=caster,distance=..2.5] add casteractive
+execute if entity @s[tag=agro5] run tag @e[tag=caster,distance=..5.5] add casteractive
+execute if entity @s[tag=agro9] run tag @e[tag=caster,distance=..9.5] add casteractive
 kill @s

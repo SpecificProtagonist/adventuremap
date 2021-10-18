@@ -1,28 +1,28 @@
 #Agro
-execute @p ~ ~ ~ execute @e[tag=agro2,r=2] ~ ~ ~ function map:agro
-execute @p ~ ~ ~ execute @e[tag=agro5,r=5] ~ ~ ~ function map:agro
-execute @p ~ ~ ~ execute @e[tag=agro9,r=9] ~ ~ ~ function map:agro
+execute at @p as @e[tag=agro2,distance=..2.5] run function map:agro
+execute at @p as @e[tag=agro5,distance=..5.5] run function map:agro
+execute at @p as @e[tag=agro9,distance=..9.5] run function map:agro
 
 #Spectre Speed
 scoreboard players add @p spectreSpeed 1
-scoreboard players set @p[score_spectreSpeed_min=140] spectreSpeed 0
-execute @p[score_spectreSpeed=0] ~ ~ ~ effect @e[tag=spectre] speed 1 12 true
+scoreboard players set @p[scores={spectreSpeed=140..}] spectreSpeed 0
+execute if entity @p[scores={spectreSpeed=0}] run effect give @e[tag=spectre] speed 1 12 true
 
 #Particle
-execute @e[tag=zombieSlow] ~ ~ ~ particle blockcrack ~ ~1.3 ~ 0 0 0 1 0 anything @a 88
-execute @e[tag=zombieGroup] ~ ~ ~ particle blockcrack ~ ~1.3 ~ 0 0 0 1 0 anything @a 120
+execute at @e[tag=zombieSlow] run particle block ancient_debris ~ ~1.3 ~ 
+execute at @e[tag=zombieGroup] run particle block ancient_debris ~ ~1.3 ~ 
 
 #Mimic
-scoreboard players tag @e[tag=Mimic] add toMimic {Items:[]}
-execute @e[tag=toMimic] ~ ~ ~ summon cave_spider ~ ~ ~ {Passengers:[{id:"hopper_minecart",Enabled:0,CustomName:Chest,CustomDisplayTile:1,DisplayOffset:-4,DisplayTile:chest}]}
+tag @e[tag=Mimic,nbt={Items:[]}] add toMimic
+execute at @e[tag=toMimic] run summon cave_spider ~ ~ ~ {Passengers:[{id:"hopper_minecart",Enabled:0,CustomName:Chest,CustomDisplayTile:1,DisplayOffset:-4,DisplayTile:chest}]}
 kill @e[tag=toMimic]
 
 #Empty Items
-scoreboard players tag @e[tag=Item] add toRemove {Items:[]}
-execute @e[tag=toRemove] ~ ~ ~ kill @e[tag=ItemCloud,r=1]
+tag @e[tag=Item,nbt={Items:[]}] add toRemove
+execute at @e[tag=toRemove] run kill @e[tag=ItemCloud,distance=..1]
 kill @e[tag=toRemove]
-scoreboard players tag @e[tag=ItemCloud] add itemCloudEmpty
-execute @e[tag=Item] ~ ~ ~ scoreboard players tag @e[tag=ItemCloud,r=2] remove itemCloudEmpty
+tag @e[tag=ItemCloud] add itemCloudEmpty
+execute at @e[tag=Item] run tag @e[tag=ItemCloud,distance=..2] remove itemCloudEmpty
 kill @e[tag=itemCloudEmpty]
 
 #Illusionary Walls
@@ -32,33 +32,33 @@ kill @e[tag=itemCloudEmpty]
 #execute @e[tag=boss1Key] ~ ~ ~ /particle dragonbreath ~ ~.5 ~ .3 1 .3 .02 2
 
 #Spawnpoint
-execute @e[tag=spawnpoint_inactive] ~ ~ ~ particle magicCrit ~ ~ ~ 0 16 0 .1
-execute @p[tag=rested] ~ ~ ~ execute @e[tag=spawnpoint_active] ~ ~ ~ scoreboard players tag @p[rm=5] remove rested
-execute @p[tag=!rested] ~ ~ ~ function map:set_spawnpoint if @e[tag=spawnpoint,r=2]
+execute at @e[tag=spawnpoint_inactive] run particle enchanted_hit ~ ~ ~ 0 16 0 .1
+execute if entity @p[tag=rested] at @e[tag=spawnpoint_active] run tag @p[distance=5..] remove rested
+execute as @p[tag=!rested] if entity @e[tag=spawnpoint,distance=..2.5] run function map:set_spawnpoint
 
 #Casters
-execute @e[tag=casteractive] ~ ~ ~ map:update_caster
+execute as @e[tag=casteractive] at @s run function map:update_caster
 
 #Evokers
-execute @e[type=vex] ~ ~ ~ effect @e[tag=mob] speed 2 2 true
-execute @e[type=vex] ~ ~ ~ particle dragonbreath ~ ~ ~ .5 .5 .5 0 10
-effect @e[type=vex] invisibility 3 0 true
+execute at @e[type=vex] run effect give @e[tag=mob] speed 2 2 true
+execute at @e[type=vex] run particle dragon_breath ~ ~ ~ .5 .5 .5 0 10
+effect give @e[type=vex] invisibility 3 0 true
 kill @e[type=vex]
 
 #Brainspike
-execute @e[tag=brainspike] ~ ~ ~ function map:brainspike_death unless @e[r=2,tag=brainspike_zombie]
+execute as @e[tag=brainspike] at @s unless @e[distance=..2.5,tag=brainspike_zombie] run kill @s
 
 #Boss
-function map:boss1/tick if @e[tag=boss1]
-function map:boss2/tick if @p[tag=boss2_started]
+execute if @e[tag=boss1] run function map:boss1/tick
+execute if @p[tag=boss2_started] run function map:boss2/tick
 
 #Cursed Flames
-execute @e[type=area_effect_cloud,tag=!agro] ~ ~ ~ scoreboard players tag @s[tag=!ItemCloud] add cursed_flame_start {Particle:"dragonbreath"}
-function map:correct_cursed_flame if @e[tag=cursed_flame_start]
+execute as @e[type=area_effect_cloud,tag=!agro] run tag @s[tag=!ItemCloud,nbt={Particle:"dragon_breath"}] add cursed_flame_start
+execute if @e[tag=cursed_flame_start] run function map:correct_cursed_flame
 
 #Cast Spells
 scoreboard players remove @p[score_spellCooldown_min=1] spellCooldown 1
-execute @p[tag=!cooldown_from_potion,score_spellCooldown_min=1] ~ ~ ~ particle totem ~ ~1 ~ .4 .1 .4 0 1
-execute @p[tag=!cooldown_from_potion,score_spellCooldown_min=1] ~ ~ ~ execute @p[score_castSpell_min=1] ~ ~ ~ particle reddust ~ ~1.5 ~ .5 .1 .5 0 15
-execute @p[score_spellCooldown=0] ~ ~ ~ function map:spell/cast if @p[score_castSpell_min=1]
+execute at @p[tag=!cooldown_from_potion,score_spellCooldown_min=1] run particle totem ~ ~1 ~ .4 .1 .4 0 1
+execute at @p[tag=!cooldown_from_potion,score_spellCooldown_min=1] at @p[score_castSpell_min=1] run particle reddust ~ ~1.5 ~ .5 .1 .5 0 15
+execute if @p[score_castSpell_min=1] as @p[score_spellCooldown=0] at @s run function map:spell/cast
 scoreboard players set @p castSpell 0
