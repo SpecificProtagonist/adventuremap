@@ -1,1 +1,0 @@
-give @p magma_cream 1 0 {HideFlags:63,display:{Lore:["Used to reinforce weapons further.","It is rare that the Good Church would freely give","a symbol of the Divinities victory such as this up."],Name:"§rTitanite Chunk"}}

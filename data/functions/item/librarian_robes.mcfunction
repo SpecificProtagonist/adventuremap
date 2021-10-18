@@ -1,1 +1,0 @@
-give @p leather_chestplate 1 0 {Unbreakable:1,HideFlags:63,display:{Lore:["3 Armor","Not in the best condition,","but still rather sturdy."],color:12161873,Name:"§rLibrarian Robes"},AttributeModifiers:[{UUIDLeast:1,UUIDMost:2,Name:"§rchest",Slot:chest,Operation:0,AttributeName:"generic.armor",Amount:3}]}

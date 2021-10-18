@@ -1,1 +1,0 @@
-give @p fermented_spider_eye 1 0 {HideFlags:63,display:{Lore:["Used to reinforce weapons.","This material stems from the body","of dead demons slain by the Divinity","if the Good Church is to be believed."],Name:"§rTitanite Shard"}}

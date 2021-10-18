@@ -1,1 +1,0 @@
-give @p diamond_boots 1 0 {Unbreakable:1,HideFlags:63,display:{Lore:["They almost seem to fall apart"],Name:"§rRagged Footwraps"},AttributeModifiers:[{UUIDLeast:1,UUIDMost:4,Name:"a",Slot:chest,Operation:0,AttributeName:"generic.armor",Amount:0}]}
