@@ -1,1 +1,1 @@
-give @p armor_stand 1 0 {EntityTag:{NoGravity:1,ArmorItems:[{},{},{id:"chainmail_chestplate",Count:1}],HandItems:[{id:bow,Count:1}],Tags:["mobPos","mobPosSkeletonBow"],CustomNameVisible:true,CustomName:skeletonBow},display:{Name:skeletonBow}}
+give @p armor_stand{EntityTag:{NoGravity:1,ArmorItems:[{},{},{id:"chainmail_chestplate",Count:1}],HandItems:[{id:bow,Count:1}],Tags:["mobPos","mobPosSkeletonBow"],CustomNameVisible:true,CustomName:skeletonBow},display:{Name:skeletonBow}}

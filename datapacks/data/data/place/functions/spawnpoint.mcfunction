@@ -1,1 +1,1 @@
-give @p armor_stand 1 0 {EntityTag:{CustomName:"Spawnpoint",CustomNameVisible:true,Tags:[spawnpoint,spawnpoint_inactive]},display:{Name:spawnpoint}}
+give @p armor_stand{EntityTag:{CustomName:"Spawnpoint",CustomNameVisible:true,Tags:[spawnpoint,spawnpoint_inactive]},display:{Name:spawnpoint}}
