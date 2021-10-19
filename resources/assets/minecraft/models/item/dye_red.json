@@ -1,6 +1,0 @@
-{
-    "parent": "item/ring",
-    "textures": {
-        "layer0": "item/ruby_stoneplate_ring"
-    }
-}

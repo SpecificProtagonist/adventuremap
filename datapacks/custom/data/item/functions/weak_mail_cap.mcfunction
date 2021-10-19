@@ -1,0 +1,1 @@
+give @p chainmail_helmet{Unbreakable:1,HideFlags:63,display:{Lore:["2 Armor","Made out of butted rings, this is","cheap to make but not nearly as sturdy as proper mail."],Name:"§rWeak Mail Cap"},AttributeModifiers:[{UUIDLeast:1,UUIDMost:2,Name:"head",Slot:head,Operation:0,AttributeName:"generic.armor",Amount:3}]}

@@ -1,1 +1,0 @@
-give @p purple_dye{HideFlags:63,display:{Name:"§rSilver Ring",Lore:["Boost item drop rate.","Simple and unadorned, but seen as a charm of good luck."]},AttributeModifiers:[{UUIDMost:5L,UUIDLeast:1L,AttributeName:"generic.luck",Name:"a",Slot:"offhand",Operation:0,Amount:1}]}

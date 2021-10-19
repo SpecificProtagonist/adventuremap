@@ -1,1 +1,0 @@
-give @p armor_stand{EntityTag:{NoGravity:1,ArmorItems:[{},{},{id:"leather_chestplate",Count:1}],Tags:["mobPos","mobPosZombieGroup"],CustomNameVisible:true,CustomName:zombieGroup},display:{Name:zombieGroup}}

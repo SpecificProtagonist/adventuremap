@@ -1,1 +1,0 @@
-give @p carrot_on_a_stick{spell:"regen",Unbreakable:1,HideFlags:63,display:{Lore:["6 Mana","Regenerate some health","An almost doll-like bundle giving of the feeling of comfort"],Name:"§rTalisman of Regeneration"}}

@@ -1,0 +1,51 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"bonus_rolls": 1,
+			"entries": [
+				{
+					"type": "empty",
+					"weight": 15
+				},
+				{
+					"type": "item",
+					"name": "minecraft:leather_chestplate",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{Unbreakable:1,HideFlags:63,display:{Lore:[\"1 Armor, 1 Armor Thoughness\",\"Originally of fine quality\",\"but worn and old.\"],color:7754555,Name:\"Old Leather Vest\"},AttributeModifiers:[{UUIDLeast:1,UUIDMost:2,Name:\"chest\",Slot:chest,Operation:0,AttributeName:\"generic.armor\",Amount:1},{UUIDLeast:9,UUIDMost:2,Name:\"chest\",Slot:chest,Operation:0,AttributeName:\"generic.armorToughness\",Amount:1}]}"
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:golden_sword",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{Damage:10,Unbreakable:1,HideFlags:63,display:{Lore:[\"5 Sharp Damage, Fast, Sweeping 2\",\"Reinforce for 1 titanite shard\",\"A butchers tool of choice,\",\"capable of inflicting damage on\",\"humans as easily as on animals\"],Name:\"§rCleaver\"},AttributeModifiers:[{UUIDLeast:1,UUIDMost:6,Name:\"a\",Slot:mainhand,Operation:0,AttributeName:\"generic.attackDamage\",Amount:4.0f},{UUIDLeast:2,UUIDMost:6,Name:\"b\",Slot:mainhand,Operation:1,AttributeName:\"generic.attackSpeed\",Amount:-0.825f}],ench:[{id:22,lvl:2}],upgradeable:1,upgradeLevel:0,weaponType:2,dualWield:0,spell:\"Cleaver\"}"
+						}
+					]
+				}
+			],
+			"conditions": [
+				{
+					"condition": "killed_by_player"
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "loot_table",
+					"name": "mob:blood_vial",
+					"weight": 1
+				}
+			]
+		}
+	]
+}

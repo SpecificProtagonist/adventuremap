@@ -1,1 +1,0 @@
-give @p diamond_boots{Unbreakable:1,HideFlags:63,display:{Lore:["Slightly increases movement speed","Echoes of the spectre it came from remain"],Name:"§rInfused Rags"},AttributeModifiers:[{UUIDLeast:1,UUIDMost:4,Name:"a",Slot:feet,Operation:1,AttributeName:"generic.movementSpeed",Amount:0.13}]}

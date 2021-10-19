@@ -1,1 +1,0 @@
-give @p potion{loseOnDeath:false,display:{Name:"§rSoothing Cure",Lore:["Restores some health"]},HideFlags:32,CustomPotionColor:13056400,CustomPotionEffects:[{Id:10,Amplifier:0,Duration:300,ShowParticles:0}]}

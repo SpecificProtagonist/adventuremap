@@ -1,1 +1,0 @@
-give @p chainmail_chestplate{Unbreakable:1,HideFlags:63,display:{Lore:["3 Armor","Made out of butted rings, this is","cheap to make but not nearly as sturdy as proper mail."],Name:"§rWeak Mail"},AttributeModifiers:[{UUIDLeast:1,UUIDMost:2,Name:"§rchest",Slot:chest,Operation:0,AttributeName:"generic.armor",Amount:3}]}
