@@ -1,7 +1,7 @@
 #Agro
-execute at @p as @e[tag=agro2,distance=..2.5] run function map:agro
-execute at @p as @e[tag=agro5,distance=..5.5] run function map:agro
-execute at @p as @e[tag=agro9,distance=..9.5] run function map:agro
+execute at @p as @e[tag=agro2,distance=..2.5] at @s run function map:agro
+execute at @p as @e[tag=agro5,distance=..5.5] at @s run function map:agro
+execute at @p as @e[tag=agro9,distance=..9.5] at @s run function map:agro
 
 #Spectre Speed
 scoreboard players add @p spectreSpeed 1
@@ -32,9 +32,9 @@ kill @e[tag=itemCloudEmpty]
 #execute @e[tag=boss1Key] ~ ~ ~ /particle dragonbreath ~ ~.5 ~ .3 1 .3 .02 2
 
 #Spawnpoint
-execute at @e[tag=spawnpoint_inactive] run particle enchanted_hit ~ ~ ~ 0 16 0 .1
+execute at @e[tag=spawnpoint_inactive] run particle enchanted_hit ~ ~1 ~ 0 1 0 .1 10
 execute if entity @p[tag=rested] at @e[tag=spawnpoint_active] run tag @p[distance=5..] remove rested
-execute as @p[tag=!rested] if entity @e[tag=spawnpoint,distance=..2.5] run function map:set_spawnpoint
+execute as @p[tag=!rested] at @s if entity @e[tag=spawnpoint,distance=..2.5] run function map:set_spawnpoint
 
 #Casters
 execute as @e[tag=casteractive] at @s run function map:update_caster

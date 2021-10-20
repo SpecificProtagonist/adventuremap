@@ -5,7 +5,7 @@ execute at @p[scores={eventTimer=100..220}] run particle large_smoke -490 57.5 4
 execute at @p[scores={eventTimer=160..220}] run particle large_smoke -490 57.5 418 .2 .3 .2 0 5
 execute at @p[scores={eventTimer=190..220}] run particle flame -490 57.5 418 .1 .1 .1 0 10
 execute at @p[scores={eventTimer=220..228}] run particle witch -490 58 418 .1 .1 .1 0 15
-execute at @p[scores={eventTimer=220}] run summon zombie -490 57 418 {Attributes:[{Name:generic.movementSpeed,Base:.25},{Name:generic.maxHealth,Base:45}],Health:45,PersistanceRequired:true,Tags:[mob,boss1_minnion],Invulnerable:true,CustomName:"§rDemon Avatar",ArmorItems:[{},{},{id:leather_chestplate,Count:1,tag:{display:{color:4587520}}},{id:leather_helmet,Count:1,tag:{display:{color:4587520}}}],Passengers:[{id:area_effect_cloud,Radius:1,RadiusPerTick:0,RadiusPerUse:0,Duration:9999,Tags:[mob,boss1_fireballMarker]}],ArmorDropChances:[0f,0f,0f,0f]}
+execute at @p[scores={eventTimer=220}] run summon zombie -490 57 418 {Attributes:[{Name:generic.movement_speed,Base:.25},{Name:generic.max_health,Base:45}],Health:45,PersistanceRequired:true,Tags:[mob,boss1_minnion],Invulnerable:true,CustomName:"§rDemon Avatar",ArmorItems:[{},{},{id:leather_chestplate,Count:1,tag:{display:{color:4587520}}},{id:leather_helmet,Count:1,tag:{display:{color:4587520}}}],Passengers:[{id:area_effect_cloud,Radius:1,RadiusPerTick:0,RadiusPerUse:0,Duration:9999,Tags:[mob,boss1_fireballMarker]}],ArmorDropChances:[0f,0f,0f,0f]}
 execute if entity @p[scores={eventTimer=220..228}] run playsound block.fire.extinguish master @p -490 57 418 .6 1
 execute if entity @p[scores={eventTimer=228..}] at @e[tag=boss1_e] run particle witch ~ ~ ~ .1 .1 .1 0 3
 execute if entity @p[scores={eventTimer=100..102}] run playsound block.brewing_stand.brew master @p
@@ -13,7 +13,7 @@ execute if entity @p[scores={eventTimer=100..102}] run playsound block.brewing_s
 
 #fireball & dark spectre
 execute if entity @p[scores={eventTimer=2}] at @e[tag=boss1_fireballMarker] run summon fireball ~ ~ ~ {direction:[.0,.0,.0],Tags:[mob,boss1_fireball],ExplosionPower:2}
-execute if entity @p[scores={eventTimer=50}] at @e[tag=boss1_fireballMarker] run summon husk ~ ~ ~ {Invulnerable:true,Attributes:[{Name:generic.movementSpeed,Base:.1},{Name:generic.attackDamage,Base:1}],Tags:[mob,boss1_spectre],ActiveEffects:[{Id:14,Duration:99999,Amplifier:0,Ambient:true}],ArmorItems:[{},{},{id:"leather_chestplate",Count:1,tag:{display:{color:0}}},{id:"leather_helmet",Count:1,tag:{display:{color:0}}}],ArmorDropChances:[0f,0f,0f,0f]}
+execute if entity @p[scores={eventTimer=50}] at @e[tag=boss1_fireballMarker] run summon husk ~ ~ ~ {Invulnerable:true,Attributes:[{Name:generic.movement_speed,Base:.1},{Name:generic.attack_damage,Base:1}],Tags:[mob,boss1_spectre],ActiveEffects:[{Id:14,Duration:99999,Amplifier:0,Ambient:true}],ArmorItems:[{},{},{id:"leather_chestplate",Count:1,tag:{display:{color:0}}},{id:"leather_helmet",Count:1,tag:{display:{color:0}}}],ArmorDropChances:[0f,0f,0f,0f]}
 execute if entity @p[scores={eventTimer=50}] run kill @e[tag=boss1_fireballMarker]
 
 
@@ -28,7 +28,7 @@ execute if entity @p[scores={eventTimer=222}] run data merge entity @e[tag=boss1
 
 
 #red spectres
-execute if entity @p[scores={eventTimer=380}] at @e[tag=boss1_minnion] run summon area_effect_cloud ~ ~ ~ {Duration:10,Passengers:[{ArmorItems:[{},{},{id:"leather_chestplate",Count:1,tag:{display:{color:3934730}}},{id:"leather_helmet",Count:1,tag:{display:{color:3934730}}}],Attributes:[{Name:"generic.movementSpeed",Base:.2},{Name:generic.attackDamage,Base:1}],Health:10,Tags:[mob],ActiveEffects:[{Id:14,Duration:99999,Amplifier:0,Ambient:true}],id:Husk,ArmorDropChances:[0f,0f,0f,0f]},{ArmorItems:[{},{},{id:"leather_chestplate",Count:1,tag:{display:{color:3934730}}},{id:"leather_helmet",Count:1,tag:{display:{color:3934730}}}],Attributes:[{Name:"generic.movementSpeed",Base:.2},{Name:generic.attackDamage,Base:1}],Health:10,Tags:[mob],ActiveEffects:[{Id:14,Duration:99999,Amplifier:0,Ambient:true}],id:Husk,ArmorDropChances:[0f,0f,0f,0f]}]}
+execute if entity @p[scores={eventTimer=380}] at @e[tag=boss1_minnion] run summon area_effect_cloud ~ ~ ~ {Duration:10,Passengers:[{ArmorItems:[{},{},{id:"leather_chestplate",Count:1,tag:{display:{color:3934730}}},{id:"leather_helmet",Count:1,tag:{display:{color:3934730}}}],Attributes:[{Name:"generic.movement_speed",Base:.2},{Name:generic.attack_damage,Base:1}],Health:10,Tags:[mob],ActiveEffects:[{Id:14,Duration:99999,Amplifier:0,Ambient:true}],id:Husk,ArmorDropChances:[0f,0f,0f,0f]},{ArmorItems:[{},{},{id:"leather_chestplate",Count:1,tag:{display:{color:3934730}}},{id:"leather_helmet",Count:1,tag:{display:{color:3934730}}}],Attributes:[{Name:"generic.movement_speed",Base:.2},{Name:generic.attack_damage,Base:1}],Health:10,Tags:[mob],ActiveEffects:[{Id:14,Duration:99999,Amplifier:0,Ambient:true}],id:Husk,ArmorDropChances:[0f,0f,0f,0f]}]}
 execute if entity @p[scores={eventTimer=380}] at @e[tag=boss1_minnion] run particle large_smoke ~ ~ ~ .2 .3 .2 0 6
 execute at @p[scores={eventTimer=380}] run playsound block.fire.extinguish master @p ~ ~ ~ .6 1
 
