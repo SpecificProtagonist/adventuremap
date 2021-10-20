@@ -1,1 +1,1 @@
-give @p armor_stand{EntityTag:{NoGravity:1,ArmorItems:[{},{},{id:"leather_chestplate",Count:1}],Tags:["mobPos","mobPosZombieFeeble"],CustomNameVisible:true,CustomName:zombieFeeble},display:{Name:zombieFeeble}}
+give @p armor_stand{EntityTag:{NoGravity:1,ArmorItems:[{},{},{id:"leather_chestplate",Count:1}],Tags:["mobPos","mobPosZombieFeeble"],CustomNameVisible:true,CustomName:'{"text":"zombieFeeble"}'},display:{Name:'{"text":"zombieFeeble"}'}}
