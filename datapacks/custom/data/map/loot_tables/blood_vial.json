@@ -11,7 +11,7 @@
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{loseOnDeath:true,Potion:\"healing\",display:{Name:\"Poluted Blood Vial\",Lore:[\"Restores some health\",\"Not very clean.\"]},HideFlags:32,CustomPotionEffects:[{Id:9,Amplifier:0,Duration:90,ShowParticles:0}]}"
+							"tag": "{loseOnDeath:true,Potion:\"healing\",display:{Name:'{\"text\":\"Poluted Blood Vial\"}',Lore:['{\"text\":\"Restores some health\"}','{\"text\":\"Not very clean.\"}']},HideFlags:32,CustomPotionEffects:[{Id:9,Amplifier:0,Duration:90,ShowParticles:0}]}"
 						}
 					]
 				},{

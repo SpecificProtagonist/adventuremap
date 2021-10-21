@@ -1,14 +1,14 @@
 {
-  "custom.boom": {
+  "boom": {
     "category": "master",
     "sounds": [
-      "custom/boom"
+      "boom"
     ]
 },
-  "custom.statue_demon_1": {
+  "statue_demon_1": {
     "category": "master",
     "sounds": [
-      "custom/statue_demon_1"
+      "statue_demon_1"
     ]
 },
 
@@ -41,9 +41,9 @@
         "type": "event",
         "weight": 2
       },
-      "mob/stray/hurt1",
-      "mob/stray/hurt2",
-      "mob/stray/hurt3"
+      "stray/hurt1",
+      "stray/hurt2",
+      "stray/hurt3"
     ]
   },
   "entity.stray.death": {
@@ -55,7 +55,7 @@
         "type": "event",
         "weight": 1
       },
-      "mob/stray/death"
+      "stray/death"
     ]
   },
   "entity.zombie_villager.step": {

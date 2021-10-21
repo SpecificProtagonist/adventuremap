@@ -1,1 +1,1 @@
-give @p diamond_leggings{Unbreakable:1,HideFlags:63,display:{Lore:["1 Armor","Woven leggings of a worker."],Name:"§rCommon Pants"},AttributeModifiers:[{UUIDLeast:1,UUIDMost:3,Name:"legs",Slot:legs,Operation:0,AttributeName:"generic.armor",Amount:1}]}
+give @p diamond_leggings{Unbreakable:1,HideFlags:63,display:{Lore:['{"text":"1 Armor"}','{"text":"Woven leggings of a worker"}'],Name:'{"text":"Common Pants"}'},AttributeModifiers:[{UUIDLeast:1,UUIDMost:3,Name:"legs",Slot:legs,Operation:0,AttributeName:"generic.armor",Amount:1}]}

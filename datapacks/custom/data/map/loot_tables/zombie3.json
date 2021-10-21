@@ -14,7 +14,7 @@
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{display:{Name:\"§rGold-Emerald Ring\",Lore:[\"Allows you to cheat death,\",\"if in your offhand.\",\"Two intricate serpents entwined, biting\",\"at a small emerald. Releasing its\",\"power would break this trinket.\"]}}"
+							"tag": "{display:{Name:'{\"text\":\"Gold-Emerald Ring\"}',Lore:['{\"text\":\"Allows you to cheat death,\"}','{\"text\":\"if in your offhand.\"}','{\"text\":\"Two intricate serpents entwined, biting\"}','{\"text\":\"at a small emerald. Releasing its\"}','{\"text\":\"power would break this trinket.\"}']}}"
 						}
 					]
 				},{
@@ -24,7 +24,7 @@
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{HideFlags:63,display:{Lore:[\"Used to reinforce weapons.\",\"This material stems from the body\",\"of dead demons slain by the Divinity\",\"if the Good Church is to be believed.\"],Name:\"§rTitanite Shard\"}}"
+							"tag": "{HideFlags:63,display:{Lore:['{\"text\":\"Used to reinforce weapons.\"}','{\"text\":\"This material stems from the body\"}','{\"text\":\"of dead demons slain by the Divinity\"}','{\"text\":\"if the Good Church is to be believed.\"}'],Name:'\"text\":\"Titanite Shard\"}'}}"
 						}
 					]
 				}

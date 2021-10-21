@@ -15,7 +15,7 @@
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{Unbreakable:1,HideFlags:63,display:{Lore:[\"1 Armor\",\"Woven leggings of a worker.\"],Name:\"Common Pants\"},AttributeModifiers:[{UUIDLeast:1,UUIDMost:3,Name:\"legs\",Slot:legs,Operation:0,AttributeName:\"generic.armor\",Amount:1}]}"
+							"tag": "{Unbreakable:1,HideFlags:63,display:{Lore:['{\"text\":\"1 Armor\"}','{\"text\":\"Woven leggings of a worker\"}'],Name:'{\"text\":\"Common Pants\"}'},AttributeModifiers:[{UUIDLeast:1,UUIDMost:3,Name:\"legs\",Slot:legs,Operation:0,AttributeName:\"generic.armor\",Amount:1}]}"
 						}
 					]
 				}
@@ -31,7 +31,7 @@
 			"entries": [
 				{
 					"type": "loot_table",
-					"name": "mob:blood_vial",
+					"name": "map:blood_vial",
 					"weight": 1
 				}
 			]

@@ -1,10 +1,11 @@
 {
+    "parent": "minecraft:block/block",
     "textures": {
-        "0": "block/nether_bricks"
+        "0": "block/nether_bricks",
+        "particle": "block/nether_bricks"
     },
     "elements": [
         {
-            "name": "Cube",
             "from": [ 0.0, 0.0, 0.0 ], 
             "to": [ 16.0, 16.0, 8.0 ], 
             "faces": {
@@ -17,7 +18,6 @@
             }
         },
         {
-            "name": "Cube",
             "from": [ 8.0, 0.0, 8.0 ], 
             "to": [ 16.0, 16.0, 16.0 ], 
             "faces": {

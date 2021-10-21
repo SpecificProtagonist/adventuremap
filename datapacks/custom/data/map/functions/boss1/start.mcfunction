@@ -1,4 +1,4 @@
-playsound custom.statue_demon_1 master @p ~ ~ ~ 1 1 1
+playsound statue_demon_1 master @p ~ ~ ~ 1 1 1
 fill -492 63 434 -488 68 434 light_blue_stained_glass replace air
 summon evoker -501 62 420 {NoAI:true,Health:1,Rotation:[250f,20f],Tags:[mob,boss1_e]}
 summon evoker -498 62 410 {NoAI:true,Health:1,Rotation:[315f,20f],Tags:[mob,boss1_e]}

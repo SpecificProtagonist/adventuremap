@@ -1,1 +1,1 @@
-give @p carrot_on_a_stick{Damage:5,spell:"fireball",Unbreakable:1,HideFlags:63,display:{Lore:["3 Mana","Throw a exploding fireball.","The flame is a hungry dog","on the pyromancers leash,","be careful it doesn't bite you."],Name:"§rGreater Fireball Staff"}}
+give @p carrot_on_a_stick{Damage:5,spell:"fireball",Unbreakable:1,HideFlags:63,display:{Lore:['{"text":"3 Mana"}','{"text":"Throw a exploding fireball"}','{"text":"The flame is a hungry dog"}','{"text":"on the pyromancers leash,"}','{"text":"be careful it doesn't bite you."}'],Name:'{"text":"Greater Fireball Staff"}'}}

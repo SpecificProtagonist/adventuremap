@@ -1,1 +1,1 @@
-give @p totem_of_undying{display:{Name:"§rGold-Emerald Ring",Lore:["Allows you to cheat death,","if in your offhand.","Two intricate serpents entwined, biting","at a small emerald. Releasing its","power would break this trinket."]}}
+give @p totem_of_undying{display:{Name:'{"text":"Gold-Emerald Ring"}',Lore:['{"text":"Allows you to cheat death,"}','{"text":"if in your offhand."}','{"text":"Two intricate serpents entwined, biting"}','{"text":"at a small emerald. Releasing its"}','{"text":"power would break this trinket."}']}}

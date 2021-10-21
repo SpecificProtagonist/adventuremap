@@ -11,12 +11,12 @@ tag @p add rested
 
 clear @p potion{display:{Name:"§rBlood Vial"}}
 advancement grant @p only map:bottles
-give @p potion{loseOnDeath:true,Potion:"strong_healing",display:{Name:"§rBlood Vial",Lore:["Restores Health","Sometimes, survival takes","precedence over morality"]},HideFlags:32}
-give @p potion{loseOnDeath:true,Potion:"strong_healing",display:{Name:"§rBlood Vial",Lore:["Restores Health","Sometimes, survival takes","precedence over morality"]},HideFlags:32}
-give @p potion{loseOnDeath:true,Potion:"strong_healing",display:{Name:"§rBlood Vial",Lore:["Restores Health","Sometimes, survival takes","precedence over morality"]},HideFlags:32}
+give @p potion{loseOnDeath:true,Potion:"strong_healing",display:{Name:'{"text":"Blood Vial"}',Lore:['{"text":"Restores Health"}','{"text":"Sometimes, survival takes"}','{"text":"precedence over morality"}']},HideFlags:32}
+give @p potion{loseOnDeath:true,Potion:"strong_healing",display:{Name:'{"text":"Blood Vial"}',Lore:['{"text":"Restores Health"}','{"text":"Sometimes, survival takes"}','{"text":"precedence over morality"}']},HideFlags:32}
+give @p potion{loseOnDeath:true,Potion:"strong_healing",display:{Name:'{"text":"Blood Vial"}',Lore:['{"text":"Restores Health"}','{"text":"Sometimes, survival takes"}','{"text":"precedence over morality"}']},HideFlags:32}
 advancement revoke @p only map:bottles
 
-xp add @p[scores={athame_used=8..}] -48 levels
+xp add @p[scores={athame_usxed=8..}] -48 levels
 scoreboard players remove @e[scores={athame_used=8..}] athame_used 8
 xp add @p[scores={athame_used=4..}] -24 levels
 scoreboard players remove @e[scores={athame_used=4..}] athame_used 4
