@@ -3,13 +3,12 @@ kill @e[type=experience_orb]
 
 clear @p glass_bottle
 clear @p potion{loseOnDeath:true}
-tag @e[type=item,nbt={Item:{tag:{loseOnDeath:true}}}] add itemToKill
-kill @e[tag=itemToKill]
+kill @e[type=item,nbt={Item:{tag:{loseOnDeath:true}}}]
 
 advancement grant @p only map:bottles
-give @p potion{loseOnDeath:true,Potion:"strong_healing",display:{Name:"§rBlood Vial",Lore:["Restores Health","Sometimes, survival takes","precedence over morality"]},HideFlags:32}
-give @p potion{loseOnDeath:true,Potion:"strong_healing",display:{Name:"§rBlood Vial",Lore:["Restores Health","Sometimes, survival takes","precedence over morality"]},HideFlags:32}
-give @p potion{loseOnDeath:true,Potion:"strong_healing",display:{Name:"§rBlood Vial",Lore:["Restores Health","Sometimes, survival takes","precedence over morality"]},HideFlags:32}
+function item:blood_vial
+function item:blood_vial
+function item:blood_vial
 advancement revoke @p only map:bottles
 
 clear @p golden_sword{Damage:14}
@@ -36,5 +35,7 @@ setblock -458 55 546 lever[face=floor,facing=north,powered=false]
 setblock -458 54 546 stone
 setblock -458 54 546 chiseled_stone_bricks
 
+tag @p remove boss1_started
+bossbar set boss1 visible false
 fill -492 63 434 -488 68 434 air replace light_blue_stained_glass
 tag @p remove boss2_started

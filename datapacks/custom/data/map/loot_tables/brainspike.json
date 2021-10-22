@@ -39,7 +39,7 @@
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{Unbreakable:1,HideFlags:63,display:{Lore:['{\"text\":\"3 Armor\"}','{\"text\":\"Fine garment used by\"}','{\"text\":\"schoolars of the Good Church to\"}''{\"text\":,\"show their profession\"}'],color:9779350,Name:'{\"text\":\"Purple Vest\"}'},AttributeModifiers:[{UUIDLeast:1,UUIDMost:2,Name:\"chest\",Slot:chest,Operation:0,AttributeName:\"generic.armor\",Amount:3}]}"
+							"tag": "{Unbreakable:1,HideFlags:63,display:{Lore:['{\"text\":\"3 Armor\"}','{\"text\":\"Fine garment used by\"}','{\"text\":\"schoolars of the Good Church to\"}','{\"text\":,\"show their profession\"}'],color:9779350,Name:'{\"text\":\"Purple Vest\"}'},AttributeModifiers:[{UUIDLeast:1,UUIDMost:2,Name:\"chest\",Slot:chest,Operation:0,AttributeName:\"generic.armor\",Amount:3}]}"
 						}
 					]
 				}

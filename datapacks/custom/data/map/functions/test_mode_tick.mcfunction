@@ -49,7 +49,7 @@ kill @e[type=vex]
 execute as @e[tag=brainspike] at @s unless entity @e[distance=..2.5,tag=brainspike_zombie] run kill @s
 
 #Boss
-execute if entity @e[tag=boss1] run function map:boss1/tick
+execute if entity @p[tag=boss1_started] run function map:boss1/tick
 execute if entity @p[tag=boss2_started] run function map:boss2/tick
 
 #Cursed Flames
