@@ -59,6 +59,6 @@ execute if entity @e[tag=cursed_flame_start] run function map:correct_cursed_fla
 #Cast Spells
 scoreboard players remove @p[scores={spellCooldown=1..}] spellCooldown 1
 execute at @p[tag=!cooldown_from_potion,scores={spellCooldown=1..}] run particle totem_of_undying ~ ~1 ~ .4 .1 .4 0 1
-execute at @p[tag=!cooldown_from_potion,scores={spellCooldown=1..,castSpell=1..}] run particle dust 1.3 0.1 0.4 1.0 ~ ~1.5 ~ .5 .1 .5 0 15
-execute as @p[scores={spellCooldown=..0,castSpell=1..}] at @s run function map:spell/cast
-scoreboard players set @p castSpell 0
+execute at @p[tag=!cooldown_from_potion,scores={spellCooldown=1..,cast_spell=1..}] run particle dust 1.2 0.0 0.1 0.3 ~ ~1.5 ~ .5 .1 .5 0 15
+execute as @p[scores={spellCooldown=..0,cast_spell=1..}] at @s run function map:spell/cast
+scoreboard players set @p cast_spell 0

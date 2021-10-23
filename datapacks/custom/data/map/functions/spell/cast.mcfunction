@@ -9,12 +9,23 @@ tag @p[nbt={SelectedItem:{tag:{spell:"enchanted_sword_fire"}}}] add cast_enchant
 tag @p[nbt={SelectedItem:{tag:{spell:"enchanted_sword_curse"}}}] add cast_enchanted_sword_curse
 tag @p[nbt={SelectedItem:{tag:{spell:"athame"}}}] add cast_athame 
 
-tag @p[nbt={Inventory:[{Slot:-106b,tag:{spell:"regen"}}]}] add cast_regen 
-tag @p[nbt={Inventory:[{Slot:-106b,tag:{spell:"tentacle_beast"}}]}] add cast_tentacle_beast 
-tag @p[nbt={Inventory:[{Slot:-106b,tag:{spell:"small_fireball"}}]}] add cast_small_fireball
-tag @p[nbt={Inventory:[{Slot:-106b,tag:{spell:"fireball"}}]}] add cast_fireball 
-tag @p[nbt={Inventory:[{Slot:-106b,tag:{spell:"cursed_fireball"}}]}] add cast_cursed_fireball
-tag @p[nbt={Inventory:[{Slot:-106b,tag:{spell:"athame"}}]}] add cast_athame
+tag @p[tag=cast_regen] add main_hand_cast
+tag @p[tag=cast_tentacle_beast] add main_hand_cast
+tag @p[tag=cast_small_fireball] add main_hand_cast
+tag @p[tag=cast_fireball] add main_hand_cast
+tag @p[tag=cast_cursed_fireball] add main_hand_cast
+tag @p[tag=cast_enchanted_sword_fire] add main_hand_cast
+tag @p[tag=cast_enchanted_sword_curse] add main_hand_cast
+tag @p[tag=cast_athame] add main_hand_cast
+
+tag @p[tag=!main_hand_cast,nbt={Inventory:[{Slot:-106b,tag:{spell:"regen"}}]}] add cast_regen 
+tag @p[tag=!main_hand_cast,nbt={Inventory:[{Slot:-106b,tag:{spell:"tentacle_beast"}}]}] add cast_tentacle_beast 
+tag @p[tag=!main_hand_cast,nbt={Inventory:[{Slot:-106b,tag:{spell:"small_fireball"}}]}] add cast_small_fireball
+tag @p[tag=!main_hand_cast,nbt={Inventory:[{Slot:-106b,tag:{spell:"fireball"}}]}] add cast_fireball 
+tag @p[tag=!main_hand_cast,nbt={Inventory:[{Slot:-106b,tag:{spell:"cursed_fireball"}}]}] add cast_cursed_fireball
+tag @p[tag=!main_hand_cast,nbt={Inventory:[{Slot:-106b,tag:{spell:"athame"}}]}] add cast_athame
+
+tag @p remove main_hand_cast
 
 execute if entity @p[tag=cast_regen,level=6..] run function map:spell/regen
 execute if entity @p[tag=cast_tentacle_beast,level=10..] run function map:spell/tentacle_beast

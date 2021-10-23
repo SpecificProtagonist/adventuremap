@@ -2,9 +2,10 @@ xp set @p 0 levels
 kill @e[type=experience_orb]
 
 clear @p glass_bottle
-clear @p potion{loseOnDeath:true}
-kill @e[type=item,nbt={Item:{tag:{loseOnDeath:true}}}]
+clear @p potion{loseOnSpawn:true}
+kill @e[type=item,nbt={Item:{tag:{loseOnSpawn:true}}}]
 
+#clear @p potion{display:{Name:'{"text":"Blood Vial"}'}}
 advancement grant @p only map:bottles
 function item:blood_vial
 function item:blood_vial

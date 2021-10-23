@@ -9,11 +9,13 @@ tag @e[tag=spawnpoint_active] remove spawnpoint_inactive
 execute at @e[tag=spawnpoint_active] run spawnpoint @p ~ ~-4 ~
 tag @p add rested
 
-clear @p potion{display:{Name:"§rBlood Vial"}}
+kill @e[type=item,nbt={Item:{tag:{loseOnSpawn:true}}}]
+clear @p potion{loseOnSpawn:true}
+#clear @p potion{display:{Name:'{"text":"Blood Vial"}'}}
 advancement grant @p only map:bottles
-give @p potion{loseOnDeath:true,Potion:"strong_healing",display:{Name:'{"text":"Blood Vial"}',Lore:['{"text":"Restores Health"}','{"text":"Sometimes, survival takes"}','{"text":"precedence over morality"}']},HideFlags:32}
-give @p potion{loseOnDeath:true,Potion:"strong_healing",display:{Name:'{"text":"Blood Vial"}',Lore:['{"text":"Restores Health"}','{"text":"Sometimes, survival takes"}','{"text":"precedence over morality"}']},HideFlags:32}
-give @p potion{loseOnDeath:true,Potion:"strong_healing",display:{Name:'{"text":"Blood Vial"}',Lore:['{"text":"Restores Health"}','{"text":"Sometimes, survival takes"}','{"text":"precedence over morality"}']},HideFlags:32}
+function item:blood_vial
+function item:blood_vial
+function item:blood_vial
 advancement revoke @p only map:bottles
 
 xp add @p[scores={athame_usxed=8..}] -48 levels
