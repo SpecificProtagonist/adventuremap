@@ -14,7 +14,7 @@
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{Unbreakable:1,HideFlags:63,display:{Lore:['{\"text\":\"Slightly increases movement speed\"}','{\"text\":\"Echoes of the spectre it came from remain\"}'],Name:'{\"text\":\"Infused Rags\"}'},AttributeModifiers:[{UUIDLeast:1854435,UUIDMost:1,Name:\"a\",Slot:boots,Operation:1,AttributeName:\"generic.movement_speed\",Amount:0.13}]}"
+							"tag": "{Unbreakable:1,HideFlags:63,display:{Lore:['{\"text\":\"Slightly increases movement speed\"}','{\"text\":\"Echoes of the spectre it came from remain\"}'],Name:'{\"text\":\"Infused Rags\"}'},AttributeModifiers:[{UUID:[I;1047453172,-1758037157,-2059098284,802677784],Name:\"a\",Slot:boots,Operation:1,AttributeName:\"generic.movement_speed\",Amount:0.13}]}"
 						}
 					]
 				},
@@ -25,7 +25,7 @@
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{Unbreakable:1,HideFlags:63,display:{Lore:['{\"text\":\"Slightly increases movement speed\"}','{\"text\":\"Echoes of the spectre it came from remain\"}'],Name:'{\"text\":\"Infused Rags\"}'},AttributeModifiers:[{UUIDLeast:18545,UUIDMost:1,Name:\"a\",Slot:chest,Operation:1,AttributeName:\"generic.movement_speed\",Amount:0.13}]}"
+							"tag": "{Unbreakable:1,HideFlags:63,display:{Lore:['{\"text\":\"Slightly increases movement speed\"}','{\"text\":\"Echoes of the spectre it came from remain\"}'],Name:'{\"text\":\"Infused Rags\"}'},AttributeModifiers:[{UUID:[I;1373472454,-455294132,94169536,1557904028],Name:\"a\",Slot:chest,Operation:1,AttributeName:\"generic.movement_speed\",Amount:0.13}]}"
 						}
 					]
 				}

@@ -25,7 +25,7 @@ execute if entity @e[tag=boss1_center,scores={eventTimer=220..380}] at @e[tag=bo
 execute if entity @e[tag=boss1_center,scores={eventTimer=222}] run effect give @e[tag=boss1_minnion] speed 8 0 true
 execute if entity @e[tag=boss1_center,scores={eventTimer=220..380}] positioned as @e[tag=boss1_minnion] run teleport @e[tag=boss1_blades] ~ ~-1 ~
 execute at @e[tag=boss1_center,scores={eventTimer=380}] run tp @e[tag=boss1_blades] ~ 0 ~
-execute as @e[tag=boss1_blades] at @s tp @s ~ ~ ~ ~9 ~
+execute as @e[tag=boss1_blades] at @s run tp @s ~ ~ ~ ~9 ~
 execute if entity @e[tag=boss1_center,scores={eventTimer=380}] run data merge entity @e[tag=boss1_minnion,limit=1] {Invulnerable:false}
 
 

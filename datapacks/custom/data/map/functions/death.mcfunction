@@ -39,3 +39,4 @@ tag @p remove boss1_started
 bossbar set boss1 visible false
 fill -492 63 434 -488 68 434 air replace light_blue_stained_glass
 tag @p remove boss2_started
+bossbar set boss2 visible false

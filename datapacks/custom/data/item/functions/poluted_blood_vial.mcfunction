@@ -1,1 +1,1 @@
-give @p potion{loseOnDeath:true,Potion:"healing",display:{Name:"§rPoluted Blood Vial",Lore:["Restores some health","Not very clean."]},HideFlags:32,CustomPotionColor:16646655,CustomPotionEffects:[{Id:1,Amplifier:0,Duration:140,ShowParticles:0}]}
+give @p potion{loseOnDeath:true,Potion:"healing",display:{Name:'{"text":"Poluted Blood Vial"}',Lore:['{"text":"Restores some health"}','{"text":"Not very clean"}']},HideFlags:32,CustomPotionColor:16646655,CustomPotionEffects:[{Id:nausea,Amplifier:0,Duration:140,ShowParticles:0}]}

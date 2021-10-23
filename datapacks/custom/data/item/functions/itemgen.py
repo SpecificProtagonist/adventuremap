@@ -2,6 +2,8 @@ import codecs
 import os
 import shutil
 
+import uuid
+
 items = []
 
 def wrap_text(text):
@@ -25,7 +27,7 @@ class Item:
         items.append(self)
 
     def get_tag(self, i):
-        json = '{{Damage:{12},Unbreakable:1,HideFlags:63,display:{{Lore:[{0}],Name:{1}}},AttributeModifiers:[{{UUIDLeast:1,UUIDMost:6,Name:"a",Slot:mainhand,Operation:0,AttributeName:"generic.attack_damage",Amount:{2}f}},{{UUIDLeast:2,UUIDMost:6,Name:"b",Slot:mainhand,Operation:1,AttributeName:"generic.attack_speed",Amount:{3}f}}{4}],ench:[{{id:22,lvl:{5}}}{6}],upgradeable:{7},upgradeLevel:{8},weaponType:{9},dualWield:{10},spell:"{11}"}}'
+        json = '{{Damage:{12},Unbreakable:1,HideFlags:63,display:{{Lore:[{0}],Name:{1}}},AttributeModifiers:[{{{13},Name:"a",Slot:mainhand,Operation:0,AttributeName:"generic.attack_damage",Amount:{2}f}},{{{14},Name:"b",Slot:mainhand,Operation:1,AttributeName:"generic.attack_speed",Amount:{3}f}}{4}],ench:[{{id:22,lvl:{5}}}{6}],upgradeable:{7},upgradeLevel:{8},weaponType:{9},dualWield:{10},spell:"{11}"}}'
         name = self.name + (" + "+str(i) if i>0 else "")
         speed = -1+(self.speed/4)
         damage = (1 + i/5 * 0.8/self.speed)*self.damage
@@ -53,24 +55,25 @@ class Item:
             desc += ", Sweeping "+str(self.sweep)
         if self.twoHanded:
             desc += ", Two-Handed"
+        upgrade = ""
         if i == 0:
-            desc += ', Reinforce for 1 titanite shard'
+            upgrade += 'Reinforce for 1 titanite shard'
         elif i == 1:
-            desc += ', Reinforce for 2 titanite shards'
+            upgrade += 'Reinforce for 2 titanite shards'
         elif i == 2:
-            desc += ', Reinforce for 3 titanite shards'
+            upgrade += 'Reinforce for 3 titanite shards'
         elif i == 3:
-            desc += ', Reinforce for 1 titanite chunk'
+            upgrade += 'Reinforce for 1 titanite chunk'
         elif i == 4:
-            desc += ', Reinforce for 2 titanite chunk'
+            upgrade += 'Reinforce for 2 titanite chunk'
         lore = ""
-        for line in [desc]+self.lore:
+        for line in [desc, upgrade]+self.lore:
             if len(lore)>0:
                 lore += ","
             lore += wrap_text(line)
         return json.format(lore, wrap_text(name), damage-1, speed, "", self.sweep,\
             self.ench, 0 if i==5 else 1, i, self.dmgtype,\
-            1 if self.twoHanded else 0, self.name, self.texture)
+            1 if self.twoHanded else 0, self.name, self.texture, uuid.get(), uuid.get())
 
     def get_id(self):
         if self.spell:

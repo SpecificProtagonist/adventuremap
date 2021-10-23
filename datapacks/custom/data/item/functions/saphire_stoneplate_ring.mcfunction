@@ -1,1 +1,1 @@
-give @p green_dye{display:{Name:"§rSaphire Stoneplate Ring",Lore:["Boost movement speed.","May nothing hold you down"]},AttributeModifiers:[{UUIDMost:5L,UUIDLeast:1L,AttributeName:"generic.movement_speed",Name:"a",Slot:"offhand",Operation:1,Amount:.20}]}
+give @p green_dye{display:{Name:'{"text":"Saphire Stoneplate Ring"}',Lore:['{"text":"Boost movement speed."}','{"text":"May nothing hold you down"}']},AttributeModifiers:[{UUID:[I;295451514,-1873720968,705780450,-83071534],AttributeName:"generic.movement_speed",Name:"a",Slot:"offhand",Operation:1,Amount:.20}],HideFlags:31}
