@@ -16,9 +16,9 @@ execute at @e[tag=boss2_main] run particle flame ~ ~1 ~ .4 .4 .4 .1 20
 execute at @e[tag=boss2_main] run particle angry_villager ~ ~1 ~ .4 .4 .4 1 3
 
 # Increase difficulty with lower boss health
-execute at @e[tag=boss2,scores={boss2_health=4}] run summon ghast ~7 ~15 ~0 {Tags:[mob,boss2_ghast],ActiveEffects:[{Id:14,Duration:10000,ShowParticles:false}],Silent:1}
-execute at @e[tag=boss2,scores={boss2_health=3}] run summon ghast ~-5 ~15 5 {Tags:[mob,boss2_ghast],ActiveEffects:[{Id:14,Duration:10000,ShowParticles:false}],Silent:1}
-execute at @e[tag=boss2,scores={boss2_health=2}] run summon ghast ~-5 ~15 ~-5 {Tags:[mob,boss2_ghast],ActiveEffects:[{Id:14,Duration:10000,ShowParticles:false}],Silent:1}
+execute at @e[tag=boss2,scores={boss2_health=4}] run summon ghast ~7 ~15 ~0 {Tags:[mob,boss2_ghast],ActiveEffects:[{Id:14,Duration:10000,ShowParticles:false}],Silent:1,Invulnerable:1}
+execute at @e[tag=boss2,scores={boss2_health=3}] run summon ghast ~-5 ~15 5 {Tags:[mob,boss2_ghast],ActiveEffects:[{Id:14,Duration:10000,ShowParticles:false}],Silent:1,Invulnerable:1}
+execute at @e[tag=boss2,scores={boss2_health=2}] run summon ghast ~-5 ~15 ~-5 {Tags:[mob,boss2_ghast],ActiveEffects:[{Id:14,Duration:10000,ShowParticles:false}],Silent:1,Invulnerable:1}
 execute if entity @e[tag=boss2,scores={boss2_health=1}] at @e[tag=boss2_main] run summon zombie ~ ~ ~ {IsBaby:true,ActiveEffects:[{Id:12,Duration:10000,ShowParticles:false},{Id:14,Duration:10000,ShowParticles:false}],Fire:10000,Tags:[boss2_miniminion,mob],Attributes:[{Name:"generic.movement_speed",Base:.2},{Name:generic.attack_damage,Base:3}],Health:2,Silent:1}
 execute if entity @e[tag=boss2,scores={boss2_health=1}] at @e[tag=boss2_main] run summon zombie ~ ~ ~ {IsBaby:true,ActiveEffects:[{Id:12,Duration:10000,ShowParticles:false},{Id:14,Duration:10000,ShowParticles:false}],Fire:10000,Tags:[boss2_miniminion,mob],Attributes:[{Name:"generic.movement_speed",Base:.2},{Name:generic.attack_damage,Base:3}],Health:2,Silent:1}
 

@@ -6,7 +6,7 @@
 			"entries": [
 				{
 					"type": "empty",
-					"weight": 15
+					"weight": 30
 				},
 				{
 					"type": "item",
@@ -15,7 +15,7 @@
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{Unbreakable:1,HideFlags:63,display:{Lore:['\"text\":\"1 Armor, 1 Armor Thoughness\"}','{\"text\":\"Originally of fine quality\"}','{\"text\":\"but worn and old.\"}'],color:7754555,Name:'{\"text\":\"Old Leather Vest\"}'},AttributeModifiers:[{UUID:[I;1863199219,1412118424,-1156249853,1097450260],Name:\"chest\",Slot:chest,Operation:0,AttributeName:\"generic.armor\",Amount:1},{UUID:[I;434272270,-1970930757,1512570966,105804985],Name:\"chest\",Slot:chest,Operation:0,AttributeName:\"generic.armorToughness\",Amount:1}]}"
+							"tag": "{Unbreakable:1,HideFlags:63,display:{Lore:['{\"text\":\"1 Armor, 1 Armor Thoughness\"}','{\"text\":\"Originally of fine quality\"}','{\"text\":\"but worn and old.\"}'],color:7754555,Name:'{\"text\":\"Old Leather Vest\"}'},AttributeModifiers:[{UUID:[I;1863199219,1412118424,-1156249853,1097450260],Name:\"chest\",Slot:chest,Operation:0,AttributeName:\"generic.armor\",Amount:1},{UUID:[I;434272270,-1970930757,1512570966,105804985],Name:\"chest\",Slot:chest,Operation:0,AttributeName:\"generic.armorToughness\",Amount:1}]}"
 						}
 					]
 				},
@@ -26,7 +26,7 @@
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{Damage:10,Unbreakable:1,HideFlags:63,display:{Lore:['{\"text\":\"5 Sharp Damage, Fast, Sweeping 2, Reinforce for 1 titanite shard\"}','{\"text\":\"A butchers tool of choice,\"}','{\"text\":\"capable of inflicting damage on\"}','{\"text\":\"humans as easily as on other animals\"}'],Name:'{\"text\":\"Cleaver\"}'},AttributeModifiers:[{UUID:[I;-1524651222,1950549300,1507831896,-936888322],Name:\"a\",Slot:mainhand,Operation:0,AttributeName:\"generic.attack_damage\",Amount:4.0f},{UUID:[I;1480322275,1861797202,862239214,-1107506718],Name:\"b\",Slot:mainhand,Operation:1,AttributeName:\"generic.attackSpeed\",Amount:-0.825f}],ench:[{id:22,lvl:2}],upgradeable:1,upgradeLevel:0,weaponType:2,dualWield:0,spell:\"Cleaver\"}"
+							"tag": "{Damage:10,Unbreakable:1,HideFlags:63,display:{Lore:['{\"text\":\"5 Sharp Damage, Fast, Sweeping 2\"}','{\"text\":\"Reinforce for 1 titanite shard\"}','{\"text\":\"A butchers tool of choice,\"}','{\"text\":\"capable of inflicting damage on\"}','{\"text\":\"humans as easily as on other animals\"}'],Name:'{\"text\":\"Cleaver\"}'},AttributeModifiers:[{UUID:[I;-1524651222,1950549300,1507831896,-936888322],Name:\"a\",Slot:mainhand,Operation:0,AttributeName:\"generic.attack_damage\",Amount:4.0f},{UUID:[I;1480322275,1861797202,862239214,-1107506718],Name:\"b\",Slot:mainhand,Operation:0,AttributeName:\"generic.attack_speed\",Amount:-2.9285714285714284f}],ench:[{id:22,lvl:2}],upgradeable:1,upgradeLevel:0,weaponType:2,dualWield:0,spell:\"Cleaver\"}"
 						}
 					]
 				}

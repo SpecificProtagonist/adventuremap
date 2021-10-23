@@ -27,10 +27,10 @@ class Item:
         items.append(self)
 
     def get_tag(self, i):
-        json = '{{Damage:{12},Unbreakable:1,HideFlags:63,display:{{Lore:[{0}],Name:{1}}},AttributeModifiers:[{{{13},Name:"a",Slot:mainhand,Operation:0,AttributeName:"generic.attack_damage",Amount:{2}f}},{{{14},Name:"b",Slot:mainhand,Operation:1,AttributeName:"generic.attack_speed",Amount:{3}f}}{4}],ench:[{{id:22,lvl:{5}}}{6}],upgradeable:{7},upgradeLevel:{8},weaponType:{9},dualWield:{10},spell:"{11}"}}'
+        json = '{{Damage:{12},Unbreakable:1,HideFlags:63,display:{{Lore:[{0}],Name:{1}}},AttributeModifiers:[{{{13},Name:"a",Slot:mainhand,Operation:0,AttributeName:"generic.attack_damage",Amount:{2}f}},{{{14},Name:"b",Slot:mainhand,Operation:0,AttributeName:"generic.attack_speed",Amount:{3}f}}{4}],ench:[{{id:22,lvl:{5}}}{6}],upgradeable:{7},upgradeLevel:{8},weaponType:{9},dualWield:{10},spell:"{11}"}}'
         name = self.name + (" + "+str(i) if i>0 else "")
-        speed = -1+(self.speed/4)
-        damage = (1 + i/5 * 0.8/self.speed)*self.damage
+        speed = 1.1/self.speed - 4.5
+        damage = (1 + i/7 * 0.8/self.speed)*self.damage
         # rounding
         damage = int(damage*2)/2.0
         desc = str(int(damage)) if damage==int(damage)\
@@ -100,20 +100,20 @@ class Item:
                 +",tag:"+self.get_tag(level)+"}"
 
 def titanite_shard(num):
-    return '{id:fermented_spider_eye,Count:'+str(num)+',tag:{HideFlags:63,display:{Lore:["Used to reinforce weapons.","This material stems from the body","of dead demons slain by the Divinity","if the Good Church is to be believed."],Name:"§rTitanite Shard"}}}'
+    return '{id:fermented_spider_eye,Count:'+str(num)+',tag:{HideFlags:63,display:{Lore:[\'{"text":"Used to reinforce weapons."}\',\'{"text":"This material stems from the body"}\',\'{"text":"of dead demons slain by the Divinity"}\',\'{"text":"if the Good Church is to be believed."}\'],Name:\'{"text":"Titanite Shard"}\'}}}'
 
 def titanite_chunk(num):
-    return '{id:magma_cream,Count:'+str(num)+',tag:{HideFlags:63,display:{Lore:["Used to reinforce weapons further.","It is rare that the Good Church would freely give","a symbol of the Divinities victory such as this up."],Name:"§rTitanite Chunk"}}}'
+    return '{id:magma_cream,Count:'+str(num)+',tag:{HideFlags:63,display:{Lore:[\'{"text":"Used to reinforce weapons further."}\',\'{"text":"It is rare that the Good Church would freely give"}\',\'{"text":"a symbol of the Divinities victory such as this up."}\'],Name:\'{"text":"Titanite Chunk"}\'}}}'
 
 def twinkling_titanite(num):
-    return '{id:clay_ball,Count:'+str(num)+',tag:{HideFlags:63,display:{Lore:["Used to reinforce rings.","Magic clings to it"],Name:"§rTwinkling Titanite"}}}'
+    return '{id:clay_ball,Count:'+str(num)+',tag:{HideFlags:63,display:{Lore:[\'{"text":"Used to reinforce rings."}\',\'{"text":"Magic clings to it"}\'],Name:\'{"text":"Twinkling Titanite"}\'}}}'
 
 def write_smith(items):
     with codecs.open("smith.mcfunction", "w", "utf-8") as out:
-        out.write('summon villager ~ ~ ~ {CustomName:\'{"text":"Smith Ludh"}\',Attributes:[{Name:"generic.movement_speed",Base:0},{Name:"generic.knockback_resistance"}],Invulnerable:1,Profession:3,level:4,Offers:{Recipes:[')
+        out.write('summon villager ~ ~ ~ {CustomName:\'{"text":"Smith Ludh"}\',Attributes:[{Name:"generic.movement_speed",Base:0},{Name:"generic.knockback_resistance"}],Invulnerable:1,VillagerData:{level:3,profession:weaponsmith,type:taiga},Offers:{Recipes:[')
         for item in items:
             for i in range(5):
-                out.write("{rewardExp:0,maxUses:99,buy:"+item.get_full_tag(i)+",buyB:")
+                out.write("{rewardExp:0,uses:0,maxUses:99,buy:"+item.get_full_tag(i)+",buyB:")
                 if i==0:
                     out.write(titanite_shard(1))
                 elif i==1:

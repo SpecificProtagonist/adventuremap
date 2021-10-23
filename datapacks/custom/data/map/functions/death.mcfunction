@@ -1,4 +1,5 @@
 xp set @p 0 levels
+xp set @p 0 points
 kill @e[type=experience_orb]
 
 clear @p glass_bottle

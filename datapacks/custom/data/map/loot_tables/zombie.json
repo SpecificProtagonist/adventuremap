@@ -6,7 +6,7 @@
 			"entries": [
 				{
 					"type": "empty",
-					"weight": 50
+					"weight": 90
 				},
 				{
 					"type": "item",
@@ -33,6 +33,11 @@
 					"type": "loot_table",
 					"name": "map:blood_vial",
 					"weight": 1
+				}
+			],
+			"conditions": [
+				{
+					"condition": "killed_by_player"
 				}
 			]
 		}

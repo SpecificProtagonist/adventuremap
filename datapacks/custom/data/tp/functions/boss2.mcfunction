@@ -1,1 +1,1 @@
-tp @p 1004 97 1001
+tp @p @e[tag=boss2,limit=1]
