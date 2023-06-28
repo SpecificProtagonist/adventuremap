@@ -4,14 +4,13 @@
     "sounds": [
       "boom"
     ]
-},
+  },
   "statue_demon_1": {
     "category": "master",
     "sounds": [
       "statue_demon_1"
     ]
-},
-
+  },
   "entity.stray.ambient": {
     "category": "hostile",
     "replace": true,
@@ -65,7 +64,7 @@
       {
         "name": "entity.squid.ambient",
         "type": "event",
-		"pitch": 2
+        "pitch": 2
       }
     ]
   },
@@ -76,7 +75,7 @@
       {
         "name": "entity.squid.ambient",
         "type": "event",
-		"pitch": 2
+        "pitch": 2
       }
     ]
   },
@@ -87,7 +86,7 @@
       {
         "name": "entity.squid.ambient",
         "type": "event",
-		"pitch": 2
+        "pitch": 2
       }
     ]
   },
@@ -98,7 +97,7 @@
       {
         "name": "entity.squid.ambient",
         "type": "event",
-		"pitch": 2
+        "pitch": 2
       }
     ]
   },
@@ -109,7 +108,7 @@
       {
         "name": "entity.squid.ambient",
         "type": "event",
-		"pitch": 2
+        "pitch": 2
       }
     ]
   },
@@ -120,7 +119,7 @@
       {
         "name": "entity.squid.ambient",
         "type": "event",
-		"pitch": 2
+        "pitch": 2
       }
     ]
   },
@@ -131,7 +130,7 @@
       {
         "name": "entity.squid.ambient",
         "type": "event",
-		"pitch": 2
+        "pitch": 2
       }
     ]
   },
@@ -142,9 +141,8 @@
       {
         "name": "entity.squid.ambient",
         "type": "event",
-		"pitch": 2
+        "pitch": 2
       }
     ]
   }
-
 }

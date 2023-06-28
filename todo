@@ -1,0 +1,13 @@
+Map:
+library parkour chamber zombies don't trigger (-443 63 522)
+redstone torch at about -451 64 520
+titanite shard at -450 59 482 doesn't stack
+Smith Ludh don't work
+boss 2 fewer evokers; add ghasts
+schlucht: schwimmen unter gittern möglich (mit Aufwand)
+sewers: mehr licht; can get fire sword from below
+reset boat?
+
+Resourcepack:
+- remove spruce stairs=sideway nether bricks (of turn of relevant face culling)
+- split into custom+vanilla tweaks (still combined into same .zip)

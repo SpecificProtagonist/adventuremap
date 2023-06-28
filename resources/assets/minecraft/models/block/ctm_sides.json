@@ -3,12 +3,12 @@
 	"textures": {
 		"down": "block/oak_planks",
 		"up": "block/oak_planks",
-		"north": "variated/bookshelf/0",
-		"east": "variated/bookshelf/0",
-		"south": "variated/bookshelf/0",
-		"west": "variated/bookshelf/0",
-		"particle": "variated/bookshelf/0",
-		"all": "variated/bookshelf/0"
+		"north": "block/variated/bookshelf/0",
+		"east": "block/variated/bookshelf/0",
+		"south": "block/variated/bookshelf/0",
+		"west": "block/variated/bookshelf/0",
+		"particle": "block/variated/bookshelf/0",
+		"all": "block/variated/bookshelf/0"
 	},
 	"elements": [
 		{
