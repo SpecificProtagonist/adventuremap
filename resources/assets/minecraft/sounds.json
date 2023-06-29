@@ -5,10 +5,62 @@
       "boom"
     ]
   },
-  "statue_demon_1": {
+  "statue_demon": {
     "category": "master",
     "sounds": [
-      "statue_demon_1"
+      "statue_demon"
+    ]
+  },
+  "music.game": {
+    "category": "music",
+    "replace": true,
+    "sounds": [
+      {
+        "name": "music/0",
+        "stream": true
+      },
+      {
+        "name": "music/1",
+        "stream": true
+      },
+      {
+        "name": "music/2",
+        "stream": true
+      },
+      {
+        "name": "music/3",
+        "stream": true
+      },
+      {
+        "name": "music/4",
+        "stream": true
+      },
+      {
+        "name": "music/5",
+        "stream": true
+      },
+      {
+        "name": "music/6",
+        "stream": true
+      }
+    ]
+  },
+  "music.menu": {
+    "replace": true,
+    "sounds": [
+      {
+        "name": "music.game",
+        "type": "event"
+      }
+    ]
+  },
+  "music.overworld.desert": {
+    "replace": true,
+    "sounds": [
+      {
+        "name": "music.game",
+        "type": "event"
+      }
     ]
   },
   "entity.stray.ambient": {

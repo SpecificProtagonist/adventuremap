@@ -2,7 +2,7 @@ function map:boss2/door_accessible_from_library
 
 title @p subtitle {"text":"Cathedral of Fire"}
 title @p title {"text":""}
-playsound custom.boom master @p ~ ~ ~ 2 0 1
+playsound custom:boom master @p ~ ~ ~ 1 1 1
 
 bossbar set boss2 value 8
 scoreboard players set @e[tag=boss2] eventTimer 1
